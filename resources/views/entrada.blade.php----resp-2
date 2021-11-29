@@ -1,0 +1,62 @@
+@extends('layouts.front')
+
+@section('content')  
+<section class="position-relative cover-background tz-builder-bg-image border-none hero-style9" style="padding-top: 0px; padding-bottom: 0px; background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(' {{ asset('images/uploads/fondoconecta3.jpg') }}');">
+    <div class="container one-sixth-screen xs-one-third-screen position-relative">
+        <div class="row">
+            <div class="slider-typography text-center xs-position-absolute">
+                <div class="slider-text-middle-main">
+                    <div class="slider-text-middle">
+                        <div class="col-md-12 col-sm-12 col-xs-12 center-col text-center">
+                            <p style="font-size: 42px; color: #fff; padding: 10px">Trivia II</p>
+                            <p id="tiempo" style="font-size: 56px; color: #fff"></p>
+                        </div>   
+                        <div class="col-md-12 col-sm-12 col-xs-12 center-col text-center" id='img-pizarra'>
+                            <img src="{{ asset('assets/images/sintri.png') }}" alt="" style="border-radius: 0px; border-color: rgb(78, 78, 78); border-style: none; border-width: 1px !important;">
+                        </div>
+                        <!--div class="col-md-12 col-sm-12 col-xs-12 center-col text-center">
+                            <a href="{{ route('trivia.front')}}" class="btn btn-extra-large propClone bg-light-green text-white btn-circle margin-five-top sm-margin-five-top xs-margin-ten-top tz-text">COMENZAR TRIVIA</a>
+                        </div -->
+                    </div>                                
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+    
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 21, 2021 08:30:00").getTime();
+
+     <div class="section-title-small sm-title-medium xs-title-medium alt-font text-center font-weight-600 text-white margin-fourteen-bottom sm-margin-twelve-bottom tz-text">Tiempo restante Trivia 2</div>
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("tiempo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("tiempo").innerHTML = '<div class="col-md-12 col-sm-12 col-xs-12 center-col text-center"><a href="https://desafioconecta.cl/trivia" class="btn btn-extra-large propClone bg-light-green text-white btn-circle margin-five-top sm-margin-five-top xs-margin-ten-top tz-text">COMENZAR TRIVIA</a></div>';
+        document.getElementById("img-pizarra").innerHTML ='<img src="https://desafioconecta.cl/images/uploads/pizarron-iniciotrivia2.png" alt="" style="border-radius: 0px; border-color: rgb(78, 78, 78); border-style: none; border-width: 1px !important;">';
+      }
+    }, 1000);
+    </script>
+
+    @endsection

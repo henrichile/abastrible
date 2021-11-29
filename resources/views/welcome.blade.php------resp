@@ -1,0 +1,52 @@
+@extends('layouts.front2')
+
+@section('content')
+    <section class="position-relative cover-background tz-builder-bg-image border-none hero-style2" data-img-size="(W)1920px X (H)1000px" style="background:linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.01)), url('{{ asset('images/uploads/fondoconecta3.jpg') }}')">
+        <div class="container one-fourth-screen  position-relative">
+            <div class="row">
+                <div class="slider-typography xs-position-static text-center">
+                    <div class="slider-text-middle-main">
+                        <div class="slider-text-bottom text-center">
+                            <!-- image -->
+                            <div class="col-lg-10 col-md-8 col-sm-12 col-xs-12 center-col margin-thirty-five-top">
+                                <img class="img100" src="{{ asset('images/uploads/portada.png') }}" alt="">
+                            </div>
+                            <!-- end image -->
+                        </div>                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    
+    
+     <section class="bg-white builder-bg padding-110px-tb xs-padding-60px-tb cover-background" id="VIDEO"  style="background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('{{ asset('images/uploads/fondoazul.png') }}')">
+        <div class="container" id="BASES">
+            <div class="row equalize xs-equalize-auto">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 display-table xs-margin-fifteen-bottom" style="height: 318px;">
+                    <div class="display-table-cell-vertical-middle">  
+                        <!-- video -->
+                        <div class="video-overlay">
+                            <iframe src="https://player.vimeo.com/video/534945848" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+                            
+                        </div>
+                        <!-- end video -->
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 display-table" style="height: 318px;">
+                    <!-- section title -->
+                    <div class="display-table-cell-vertical-middle">
+                        <h2 class="text-white title-extra-large alt-font font-weight-400 line-height-40 sm-title-large xs-title-large margin-seven-bottom sm-margin-ten-bottom tz-text">Bienvenidos al Desafío Conecta, ¡Aprende y Gana!</h2>
+                        <div class="text-white title-small sm-title-medium xs-title-medium width-90 sm-width-100 font-weight-300 margin-fourteen-bottom sm-margin-twelve-bottom tz-text">El nuevo concurso donde pondrás a prueba tus conocimientos de SAP y así ganar premios sorpresa individuales y grupales.
+<br/>¡Estudia... muy pronto comienza el desafío!</div>
+                    <a class="btn btn-medium propClone text-white text-white" style="background-color: rgb(146, 29, 113)" href="{{ asset('pdf/bases-desafio-conecta.pdf') }}"><span class="tz-text">DESCARGA LAS BASES</span></a>
+                    </div>
+                    <!-- end section title -->
+                    
+                </div> 
+            </div>
+        </div>
+    </section>    
+    @endsection
