@@ -1,0 +1,55 @@
+/*ABASTIBLE-DÚO*/
+a{text-decoration: none;}
+.cabecera-duo{}
+.cabecera-duo .container{padding-top: 5%;padding-bottom:1%;}
+.barra-duo{background: #003595;min-height: 30px;text-align: right; padding: 5px 0px; color: #fff;}
+.salir a, .novedades .salir{background-color: #0071bc;border-radius: 20px;padding: 5px 20px;text-decoration: none;color: #fff; margin-left: 30px;}
+.salir a:hover{background-color: #f56511;}
+.banner-login{background-image: url(img/banner_02.jpg); border-bottom: 5px solid #fff; min-height: 440px;background-size: 100%;background-position: bottom center;text-align: center;}
+.info-home{background: #003595;color: #fff;}
+.trivia-s{width: 100%;padding: 2% 5%;background: #003595;color: #fff;border-top: 5px solid #fff;text-align: center;}
+.trivia-s h2{font-size: 4em;}
+.trivia{width: 90%;margin: 2% 5%;background-color: #fff;color: #000;border-radius: 10px;padding: 2%;}
+.tiempo{background: #1b1464;color: #fff;padding: 8px 10px;margin: 0 auto;border-radius: 10px;width: auto;
+max-width: 360px; font-size: 2em;}
+.trivia h4{margin-top: 10px;width: 100%;font-size: 2.5em;}
+.trivia p{max-width: 600px;margin: 30px auto;}
+.btn_trivia{background-color: #ff5100;padding: 5px 20px; border-radius: 10px;color: #fff;border: none;}
+.btn_trivia:hover{background-color: #0071bc; cursor: pointer;}
+.fin-trivia a.btn_trivia{background-color: #003595;position: absolute;bottom: 20px;text-align: center;margin: 0 auto;left: 50%;font-size: 1.5em;text-shadow: none;margin-left: -10%;}
+
+.fin-trivia{min-height: 400px;background-image: url(img/fnd-trivia-fin.jpg);background-size: 100%;background-position: bottom center;position: relative;text-align: center;color: #fff;text-shadow:4px 5px 5px rgba(0, 0, 0, .5);}
+.fin-trivia h4{max-width: 800px;margin: 10px auto;font-size: 2em;}
+.wtsp-footer-duo{background-color: #76bc21;border-radius: 5px;padding: 10px 50px 10px 10px;float: right;color: #fff;text-decoration: none;}
+footer{padding: 3% 0px;}
+footer  .row{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-items: flex-end;}
+.novedades{background-color: #f2f2f2;padding-top: 5%;padding-bottom: 5%;text-align: center;}
+.novedades a:hover .salir{background-color: #f56511;}
+.novedades .salir{float: right;}
+.novedades img{width: 100%;height: auto;margin-bottom: 10px;}
+.novedades p{color: #000;text-align:left ;}
+.novedades h2, .novedades h5{color: #0055b8;}
+.trivia-azul-down{width: 100%;padding-top: 5%;background: #003595;border-bottom: 5px solid #fff;color: #fff;background-image: url(img/puntos-down.png);background-size: 100%;background-repeat: no-repeat;background-position: left bottom;}
+.trivia-azul-down.loggued-done{background-image: url(img/dots-lines.jpg);background-size:cover;background-repeat: no-repeat;}
+.trivia-azul-down img{width: 100%;}
+.tabla_de_posiciones{width: 100%;padding-top: 5%;padding-bottom: 5%;background: #f56511;border-bottom: 5px solid #fff;text-align: center;background-image: url(img/fnd-orange.jpg);}
+#posiciones_table{background-color: rgba(230, 230, 230, .73);}
+#posiciones_table thead{background: #003595;color: #fff;}
+#posiciones_table tbody tr:nth-child(odd){background-color: rgba(242, 242, 242, .3);}
+.entrena{background-image: url(img/fnd-black.jpg);background-color: #252623;text-align: center;padding-top: 5%;padding-bottom: 5%;border-bottom: 5px solid #fff}
+.entrena h2{padding-bottom: 10px;}
+.entrena a{margin-top: 10px; margin-bottom: 20px; color: #f56511;float: left;}
+.expertos{background-color: #003595;background-image: url(img/puntos-top.png);background-size: 100%;background-repeat: no-repeat;background-position: left top; text-align: center;padding-top: 5%;padding-bottom: 5%;border-bottom: 5px solid #fff}
+.expertos a{margin-top: 10px; margin-bottom: 20px; color: #f56511;float: left;}
+.bases{background-color: #f56511;background-image: url(img/fnd-orange.jpg);background-size: 100%;background-repeat: no-repeat;text-align: center;padding-top: 5%;padding-bottom: 5%;color: #fff;}
+.bases p{padding: 10px auto;}
+.bases a{background-color: #003595;color: #fff;border-radius: 20px;padding: 5px 20px;}
+
+.trivia-azul-down.loggued-done.ranking{text-align: center;}
+.trivia-azul-down.loggued-done.ranking table{text-align: center;width: 100%;}
+
+
+
+
+
+
