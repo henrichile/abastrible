@@ -28,13 +28,5 @@ return [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
-    ],
-
-
-    'google' => [
-        'client_id' => '635910298333-kgg1retkp3t6qldpibt7q3nm5f4h48db.apps.googleusercontent.com',
-        'client_secret' => 'lT4HSOqmk8sXE_yi8MIEHP9c',
-        'redirect' => 'https://desafioconecta.cl/auth/google/callback',
-    ],
-
+    ]
 ];
