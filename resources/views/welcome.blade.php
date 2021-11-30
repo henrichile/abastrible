@@ -13,14 +13,14 @@
           <h3>INGRESA CON TU USUARIO DÚO</h3>
           <form method="POST" action="{{ route('login') }}" novalidate>
             @csrf
-            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="nombre.apellido@distribuidora.cl" autofocus>
+            <input id="email" type="email" class="input-mail form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="nombre.apellido@distribuidora.cl" autofocus>
             @error('email')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
           </br>
-
+          <input id="password" type="hidden" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" value="123456dummy">
           <input type="submit" value="JUGAR" class="btn_duo">
         </form>
       </div>
