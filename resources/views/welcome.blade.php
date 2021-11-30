@@ -11,12 +11,17 @@
         </div>
         <div class="col-xs-12">
           <h3>INGRESA CON TU USUARIO DÚO</h3>
-          <form action="">
-            <input type="text" name="" class="" placeholder="nombre.apellido@distribuidora.cl">
+          <form method="POST" action="{{ route('login') }}" novalidate>
+            @csrf
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="nombre.apellido@distribuidora.cl" autofocus>
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
           </br>
 
           <input type="submit" value="JUGAR" class="btn_duo">
-
         </form>
       </div>
     </div>
